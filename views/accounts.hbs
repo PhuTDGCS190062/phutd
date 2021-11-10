@@ -1,0 +1,18 @@
+
+            <a>Bạn chưa có tài khoảng?   <a href="http://localhost:3000/account/create">Tạo Ngay</a></a>
+
+
+        <div class="container">
+            <div class="row">
+                {{#each accounts}}
+                    <div class="col-4">
+                        <p><b>Tai khoan: </b>{{this.UserName}}</p>
+                        <br> 
+                        <img width="200px" src="{{this.imglink}}" />
+                        <br>
+                        <b>Vai tro: </b>{{this.Role}}
+                        <br><p><b>Ten day du: </b>{{this.FullName}}</p>
+                    </div>
+                {{/each}}
+            </div>
+        </div>

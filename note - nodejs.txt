@@ -1,0 +1,16 @@
+Notes:
+	npm init -y
+	npm  i --S express hbs  mongodb  mongoose  body-parser  express-handlebars
+
+	npm i --S @handlebars/allow-prototype-access
+	
+	
+*** Add:
+	Order page - show order's items líst
+
+*** Update:
+
+
+*** Delete
+
+

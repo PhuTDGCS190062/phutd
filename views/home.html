@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style type="text/css">
+    * {
+
+margin: 800;
+padding: 800;
+}
+.container {
+max-width: 1130px;
+margin-left: auto;
+margin-right: auto;
+}
+.row {
+display: flex;
+max-width: 100%;
+flex-wrap: wrap;
+margin-left: -15px;
+margin-right: -15px;
+}
+header {
+background-color: #faf758;
+padding: 10px 0 10px 0;
+}
+a:hover {
+color: black;
+
+}
+a {
+text-decoration: none;
+color: white;
+font-size: 20px;
+
+}
+p {
+margin: 10px 0 10px 0;
+}
+.title p {
+
+font-size: 20px;
+text-decoration: none;
+color: rgba(245,40,50,1);
+}
+.col-2 {
+flex: 0 0 16.666667%;
+max-width: 16.666667%;
+}
+.col-3 {
+flex: 0 0 25%;
+max-width: 25%;
+}
+.col-8 {
+flex: 0 0 66.666667%;
+max-width: 66.666667%;
+}
+.col-2th {
+flex: 0 0 20%;
+max-width: 20%;
+}
+.col-12 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+.menu ul li {
+
+float: left;
+margin-left: 20px;
+list-style: none;
+
+}
+.menu {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+ul.menu_child {
+position: absolute;
+width: 225px;
+background-color: #FA8258;
+z-index: 9999;
+
+}
+ul.menu_child li {
+padding: 15px 0 0 0 ;
+float: none;
+display: none;
+}
+.menu ul li:hover ul.menu_child li {
+display: block;
+}
+/*Slider*/
+    .mySlides {
+        display: none;
+    }
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: unset;
+    }
+    img {
+        vertical-align: middle;
+    }
+    .prev , .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bolder;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+/*end slider*/
+.slider-margin {
+margin-top: 20px;
+}
+.image img {
+width: 100%;
+}
+.card {
+margin-bottom: 20px;
+}
+footer {
+display: block;
+background-color: rgba(0,0,0,0.8);
+padding: 20px 0 10px 0;
+}
+ul.menu_footer li {
+list-style: none;
+}
+.footer {
+padding-bottom: 20px;
+}
+.footer h3 {
+color: rgba(100,255,10,1);
+}
+.copy_right {
+padding: 10px 0 0px 0;
+text-align: center;
+border-top: 1px solid #fff;
+}
+.sticky-top {
+position: sticky;
+top: 0;
+z-index: 1;
+}
+    </style>
+	<title>HTML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<header class="sticky-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 menu">
+          <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t1.6435-9/254434682_1549873505355573_5374806237300233773_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=c6gqRWg321cAX9wDLyX&_nc_ht=scontent.fsgn5-8.fna&oh=b426f6e0c1c72d15a4b10f135e2067fa&oe=61AD6AA7" width="900" height="90">
+				</div>
+				<div class="col-2">
+
+				</div>
+				<div class="col-8 menu">
+					<ul>
+						<li><a href="http://localhost:3000/product">Sản phẩm</a>
+						<li><a href="">Liên hệ</a></li>
+						<li><a href="">Hướng dẫn</a></li>
+            <li><a href="http://localhost:3000/account">Account</a></li>
+            <li><a href="">Giới thiệu</a></li>
+			<li><button onclick="showgiohang()">
+				<span>   </span> 
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 24 24">
+					<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+				</svg>
+			  <span id="soluong"> 0 </span></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container slider-margin">
+		<div class="row">
+			<div class="col-12">
+					<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">
+				1/3
+			</div>
+			<img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.6435-9/254897475_1549876472021943_631328921914966696_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=nl3SE43o5pgAX8ev6BT&_nc_oc=AQkDMQwcmp--OuKxSYQXXwXURSf4QRnbw61fwJqyoGpzQxdtOg6KBE6FpLxagR3Lsuhxo9N1d3NOGi-0CWZUU-Gt&_nc_ht=scontent.fsgn5-10.fna&oh=f488821fd825c61b09ee11558dced4df&oe=61AEBA74" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">
+				2/3
+			</div>
+			<img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/254459517_1549876465355277_2811489464263312213_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=aHchLtUoCI8AX89-W75&_nc_ht=scontent.fsgn5-9.fna&oh=44d753066c5068f90b832ec0ad5b42a5&oe=61AD4341" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">
+				3/3
+			</div>
+			<img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/253792498_1549876482021942_6763614753692140962_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=UUZujCOcfpAAX9T1pRJ&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-9.fna&oh=6543fb5c94a07ee22466d954567a6443&oe=61ACDC9F" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align: center;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot"onclick="currentSlide(3)"></span>
+	</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 title">
+				<p> <img src="https://cdn2.iconfinder.com/data/icons/sale-and-discount/32/Sale_and_Discount-10-512.png" width="30px" height="auto"><b>Sản phẩm Ưu Đãi Giới Hạn:</b></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 1</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 2</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 3</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 4</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 5</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 6</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 7</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 8</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 9</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-2th">
+				<div class="card">
+					<div class="image">
+						<img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/254518505_1549877758688481_2193476579344425831_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=bkZ30VcHxIgAX9skO2S&tn=2hAEurV4xfecCw1I&_nc_ht=scontent.fsgn5-5.fna&oh=a1c54622ee92cb5ac6faf9f8b9fcc06a&oe=61AD8125">
+					</div>
+					<div class="name">
+						<p>SAMSUNG GALAXY 10</p>
+					</div>
+					<div class="price">
+						<p>23.000.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row footer">
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 copy_right">
+				<a href="">No Infomation</a>
+			</div>
+		</div>
+	</footer>
+</body>
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += "active";
+	  setTimeout(showSlides, 1000);
+	}
+</script>
+</html>

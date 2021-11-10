@@ -1,0 +1,63 @@
+<H1>
+            Order details ! 
+        </H1>
+
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-1">Số TT</div>
+                <div class="col-1">Mã Sản Phẩm</div>
+                <div class="col-2"></div>
+                <div class="col-2">Tên Sản Phẩm</div>
+                <div class="col-3">Giá</div>
+                <div class="col-1">Số Lượng</div>
+                <div class="col-2">Thành Tiền</div>
+            </div>
+
+            <div class="row">
+                {{#each orderdetails}}
+
+                    <div class="col-1">
+                        {{@key}}
+                    </div>
+                    <div class="col-1">
+                        {{this.[0]}}
+                    </div>
+                    <div class="col-2">
+                        <img width="100px" src="{{this.[1].[3]}}" />
+                    </div>
+                    <div class="col-3">
+                        {{this.[1].[0]}}
+                    </div>
+                    <div class="col-2">
+                        {{this.[1].[1]}}
+                    </div>
+                    <div class="col-1">
+                        {{this.[1].[2]}}
+                    </div>
+                    <div class="col-2">
+                        {{this.[1].[4]}}
+                    </div>
+                    <div class="form-group">
+                            <button type="submit"><a href="Test.html">Delete</a></button>
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="row">
+                <div class="col-10">Tổng Tiền Thanh Toán: </div>
+                <div class="col-2"><b>{{total}}</b> vnd</div>                
+            </div>
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-2"><button type="button" class="btn btn-primary">Buy</button></div>
+            </div>
+            <button onclick="document.getElementById('demo').innerHTML=Date()">Click to check Date</button>
+
+<p id="demo"></p>
+            
+        </div>
+
+        <form action="/order/review" method="POST" id="submitOrder">
+            <input type="text" hidden id="dshang" name="dshang">
+        </form>
